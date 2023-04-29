@@ -76,7 +76,7 @@ export function ContactForm() {
                 name="name"
                 value={name}
                 onChange={handleValue}
-                placeholder="Введите имя"
+                placeholder="Enter name"
                 pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                 title="Имя может состоять только из букв, апострофа, тире и пробелов."
                 required
@@ -89,7 +89,7 @@ export function ContactForm() {
                 name="number"
                 value={number}
                 onChange={handleValue}
-                placeholder="Введите номер телефона"
+                placeholder="Enter phone number"
                 pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                 title="Номер телефона может состоять только из цифр и тире."
                 required

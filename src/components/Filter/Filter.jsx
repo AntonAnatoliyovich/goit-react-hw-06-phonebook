@@ -15,7 +15,7 @@ export const Filter = () => {
         <Wrapper>
             <Title>Contacts</Title>
             <Label>Find contacts by name</Label>
-            <Input type="text" placeholder="Начните вводить имя" value={filterData} onChange={filterValue} />
+            <Input type="text" placeholder="Enter name" value={filterData} onChange={filterValue} />
         </Wrapper>
     );
 };

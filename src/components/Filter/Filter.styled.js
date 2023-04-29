@@ -32,7 +32,6 @@ export const Label = styled.h3`
 `;
 
 export const Input = styled.input`
-// width: 80%;
     margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
