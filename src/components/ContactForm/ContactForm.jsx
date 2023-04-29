@@ -4,6 +4,7 @@ import {
     AddBox,
     Label,
     AddContactButton,
+    Input,
     } from './ContactForm.styled';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -70,7 +71,7 @@ export function ContactForm() {
             <Title>Phonebook</Title>
             <AddBox onSubmit={handleSubmit} name='addContact'>
             <Label>Name</Label>
-            <input
+            <Input
                 type="text"
                 name="name"
                 value={name}
@@ -83,7 +84,7 @@ export function ContactForm() {
     
             <Label>Number</Label>
     
-            <input
+            <Input
                 type="tel"
                 name="number"
                 value={number}
