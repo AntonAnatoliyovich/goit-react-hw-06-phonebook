@@ -78,7 +78,7 @@ export function ContactForm() {
                 onChange={handleValue}
                 placeholder="Enter name"
                 pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                title="Имя может состоять только из букв, апострофа, тире и пробелов."
+                title="Им'я може включати тільки букви, апостроф, тире та пробіли."
                 required
             />
     
@@ -91,7 +91,7 @@ export function ContactForm() {
                 onChange={handleValue}
                 placeholder="Enter phone number"
                 pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-                title="Номер телефона может состоять только из цифр и тире."
+                title="Номер телефона може включати тільки цифри та тире"
                 required
             />
             <AddContactButton type="submit" onClick={handleSubmit} name='addContact'>
