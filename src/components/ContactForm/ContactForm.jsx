@@ -5,7 +5,7 @@ import {
     Label,
     AddContactButton,
     Input,
-    } from './ContactForm.styled';
+} from './ContactForm.styled';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
