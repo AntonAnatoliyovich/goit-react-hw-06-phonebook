@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Wrapper, Label, Title } from './Filter.styled';
+import { Wrapper, Label, Title, Input } from './Filter.styled';
 import { getFilter } from 'redux/filterSlice';
 
 export const Filter = () => {
@@ -15,7 +15,7 @@ export const Filter = () => {
         <Wrapper>
             <Title>Contacts</Title>
             <Label>Find contacts by name</Label>
-            <input type="text" placeholder="Начните вводить имя" value={filterData} onChange={filterValue} />
+            <Input type="text" placeholder="Начните вводить имя" value={filterData} onChange={filterValue} />
         </Wrapper>
     );
 };

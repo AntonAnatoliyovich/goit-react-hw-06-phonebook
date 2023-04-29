@@ -1,5 +1,5 @@
 import { removeContact } from 'redux/AddContactsSlice';
-import { Wrapper, List, ListItem } from './ContactList.styled';
+import { Wrapper, List, ListItem, Button } from './ContactList.styled';
 import { useDispatch, useSelector } from 'react-redux';
 
 export function ContactList() {
@@ -19,7 +19,7 @@ export function ContactList() {
             <ListItem key={contact.id}>
                 <span>{contact.name}: </span>
                 <span>{contact.number}</span>
-                <button onClick={() => dispatch(removeContact(contact.id))}>Delete</button>
+                <Button onClick={() => dispatch(removeContact(contact.id))}>Delete</Button>
             </ListItem>
             ))}
         </List>
